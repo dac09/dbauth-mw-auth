@@ -1,5 +1,10 @@
-import { createDbAuthClient, createAuth } from '@redwoodjs/auth-dbauth-web'
+import {
+  createDbAuthClient,
+  createMiddlewareAuth,
+} from '@redwoodjs/auth-dbauth-web'
 
-const dbAuthClient = createDbAuthClient()
+const dbAuthClient = createDbAuthClient({
+  middleware: true,
+})
 
-export const { AuthProvider, useAuth } = createAuth(dbAuthClient)
+export const { AuthProvider, useAuth } = createMiddlewareAuth(dbAuthClient)
