@@ -11,14 +11,17 @@ import {
   MiddlewareResponse,
 } from '@redwoodjs/vite/middleware'
 
-import { handler as dbAuthHandler } from '$api/src/functions/auth'
-import { getCurrentUser } from '$api/src/lib/auth'
+interface DbAuthMiddlewareOptions {
+  cookieName: string
+  getCurrentUser: any
+  dbAuthHandler: any
+}
 
 export const createDbAuthMiddleware = ({
   cookieName,
-}: {
-  cookieName: string
-}) => {
+  dbAuthHandler,
+  getCurrentUser,
+}: DbAuthMiddlewareOptions) => {
   return async (req: MiddlewareRequest) => {
     const res = MiddlewareResponse.next()
 
