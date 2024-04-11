@@ -1,11 +1,21 @@
 import type { TagDescriptor } from '@redwoodjs/web'
 
 import App from './App'
+import { createDbAuthMiddleware } from './dbAuthMiddleware'
 import { Document } from './Document'
 
+// eslint-disable-next-line no-restricted-imports
+import { cookieName } from '$api/src/lib/auth'
 interface Props {
   css: string[]
   meta?: TagDescriptor[]
+}
+
+export const registerMiddleware = () => {
+  const dbAuthMiddleware = createDbAuthMiddleware({
+    cookieName,
+  })
+  return [dbAuthMiddleware]
 }
 
 export const ServerEntry: React.FC<Props> = ({ css, meta }) => {
