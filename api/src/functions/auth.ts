@@ -7,8 +7,8 @@ import { cookieName } from 'src/lib/auth'
 import { db } from 'src/lib/db'
 
 export const handler = async (
-  event: APIGatewayProxyEvent,
-  context: Context
+  event: APIGatewayProxyEvent | Request,
+  context?: Context
 ) => {
   const forgotPasswordOptions: DbAuthHandlerOptions['forgotPassword'] = {
     // handler() is invoked after verifying that a user was found with the given
