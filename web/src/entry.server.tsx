@@ -1,7 +1,7 @@
+import { createDbAuthMiddleware } from '@redwoodjs/auth-dbauth-middleware'
 import type { TagDescriptor } from '@redwoodjs/web'
 
 import App from './App'
-import { createDbAuthMiddleware } from './dbAuthMiddleware'
 import { Document } from './Document'
 
 // eslint-disable-next-line no-restricted-imports
