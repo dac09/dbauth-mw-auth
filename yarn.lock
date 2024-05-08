@@ -6770,9 +6770,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "api@workspace:api"
   dependencies:
-    "@redwoodjs/api": "npm:8.0.0-canary.495"
-    "@redwoodjs/auth-dbauth-api": "npm:8.0.0-canary.495"
-    "@redwoodjs/graphql-server": "npm:8.0.0-canary.495"
+    "@redwoodjs/api": "npm:8.0.0-canary.549"
+    "@redwoodjs/auth-dbauth-api": "npm:8.0.0-canary.549"
+    "@redwoodjs/graphql-server": "npm:8.0.0-canary.549"
   languageName: unknown
   linkType: soft
 
@@ -16644,8 +16644,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@redwoodjs/core": "npm:8.0.0-canary.495"
-    "@redwoodjs/project-config": "npm:8.0.0-canary.495"
+    "@redwoodjs/core": "npm:8.0.0-canary.549"
+    "@redwoodjs/project-config": "npm:8.0.0-canary.549"
   languageName: unknown
   linkType: soft
 
@@ -18779,12 +18779,12 @@ __metadata:
   resolution: "web@workspace:web"
   dependencies:
     "@apollo/client-react-streaming": "npm:0.10.0"
-    "@redwoodjs/auth-dbauth-middleware": "npm:8.0.0-canary.495"
-    "@redwoodjs/auth-dbauth-web": "npm:8.0.0-canary.495"
-    "@redwoodjs/forms": "npm:8.0.0-canary.495"
-    "@redwoodjs/router": "npm:8.0.0-canary.495"
-    "@redwoodjs/vite": "npm:8.0.0-canary.495"
-    "@redwoodjs/web": "npm:8.0.0-canary.495"
+    "@redwoodjs/auth-dbauth-middleware": "npm:8.0.0-canary.549"
+    "@redwoodjs/auth-dbauth-web": "npm:8.0.0-canary.549"
+    "@redwoodjs/forms": "npm:8.0.0-canary.549"
+    "@redwoodjs/router": "npm:8.0.0-canary.549"
+    "@redwoodjs/vite": "npm:8.0.0-canary.549"
+    "@redwoodjs/web": "npm:8.0.0-canary.549"
     "@types/react": "npm:^18.2.55"
     "@types/react-dom": "npm:^18.2.19"
     autoprefixer: "npm:^10.4.19"
@@ -18792,8 +18792,8 @@ __metadata:
     postcss: "npm:^8.4.38"
     postcss-loader: "npm:^8.1.1"
     prettier-plugin-tailwindcss: "npm:^0.5.12"
-    react: "npm:19.0.0-canary-36e62c603-20240418"
-    react-dom: "npm:19.0.0-canary-36e62c603-20240418"
+    react: "npm:19.0.0-canary-cb151849e1-20240424"
+    react-dom: "npm:19.0.0-canary-cb151849e1-20240424"
     tailwindcss: "npm:^3.4.3"
   languageName: unknown
   linkType: soft
